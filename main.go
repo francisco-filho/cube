@@ -121,7 +121,6 @@ func stopContainer(d *task.Docker, id string) *task.DockerResult{
 		log.Printf("Error stoping the container %s: %v\n", id, res.Error)
 		return &res
 	}
-
 	log.Printf("Container %s stopped\n", id)
 
 	return &res
